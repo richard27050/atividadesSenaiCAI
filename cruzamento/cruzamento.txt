@@ -1,0 +1,40 @@
+#define semafaroVermelho 13
+#define semafaroVerde2 2
+#define semafaroAmarelo2 3
+#define semafaroVerde 11
+#define semafaroAmarelo 12
+#define semafaroVermelho2 4
+
+
+void setup()
+{
+ pinMode(semafaroVermelho,OUTPUT);
+  pinMode(semafaroVerde2, OUTPUT);
+  pinMode(semafaroAmarelo2, OUTPUT);
+  pinMode(semafaroVerde, OUTPUT);
+  pinMode(semafaroVermelho2, OUTPUT);
+  pinMode(semafaroAmarelo, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(semafaroVermelho,HIGH);
+  digitalWrite(semafaroVerde2, HIGH);
+  delay(3000);
+    digitalWrite(semafaroVerde2, LOW);
+  
+  digitalWrite(semafaroAmarelo2, HIGH);
+  delay(2000);
+    digitalWrite(semafaroAmarelo2,LOW);
+  digitalWrite(semafaroVermelho, LOW);
+  
+  digitalWrite(semafaroVermelho2, HIGH);
+  digitalWrite(semafaroVerde, HIGH);
+  delay(3000);
+  digitalWrite(semafaroVerde, LOW);
+  
+  digitalWrite(semafaroAmarelo, HIGH);
+    delay(2000);
+    digitalWrite(semafaroAmarelo, LOW);
+  digitalWrite(semafaroVermelho2, LOW);
+}
