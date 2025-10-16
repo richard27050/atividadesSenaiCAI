@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Feliz Aniversário de Namoro ❤️</title>
+<style>
+:root{
+--accent: #e91e63;
+--bg: #1a0b1a;
+--card: #2a0f23;
+--glass: rgba(255,255,255,0.05);
+--text: #ffe6f0;
+--muted: #f5b6cc;
+font-family: 'Segoe UI', Inter, system-ui, -apple-system;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+margin:0;
+background:radial-gradient(circle at top,#3a0d2a,#1a0b1a);
+color:var(--text);
+line-height:1.6;
+}
+.wrap{max-width:900px;margin:0 auto;padding:24px;text-align:center}
+header{margin-bottom:32px}
+.heart{font-size:56px;animation: pulse 1.2s infinite}
+@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.2)}100%{transform:scale(1)}}
+h1{font-size:32px;margin:12px 0;color:#fff}
+p.lead{font-size:18px;color:var(--muted)}
+.card{background:var(--card);padding:24px;border-radius:16px;box-shadow:0 6px 18px rgba(0,0,0,0.5);margin-top:20px}
+footer{margin-top:30px;color:var(--muted);font-size:14px}
+button{margin-top:20px;padding:12px 20px;border:none;border-radius:8px;background:var(--accent);color:#fff;font-weight:600;cursor:pointer;transition:0.2s}
+button:hover{opacity:0.9}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<div class="heart">❤️</div>
+<h1>Feliz 1 ano e 9 meses, Agatha!</h1>
+<p class="lead">Hoje celebramos o nosso amor e todo o caminho que já trilhamos juntos.</p>
+</header>
+
+
+<main>
+<div class="card">
+<h2>Para você, meu amor</h2>
+<p>
+Agatha, nesses 1 ano e 9 meses ao seu lado descobri o verdadeiro significado do amor.
+Cada sorriso seu ilumina os meus dias, cada abraço seu me faz sentir em casa.
+Obrigado por ser minha parceira, minha amiga, meu refúgio e minha inspiração.
+</p>
+<p>
+Que este seja apenas o começo de muitos e muitos meses, anos e eternidades juntos.
+Amo você mais do que palavras podem descrever, e meu maior presente é poder dividir
+a vida contigo. ❤️
+</p>
+<button id="magicBtn">Clique aqui</button>
+<p id="greet" style="margin-top:12px;color:var(--accent);font-weight:600"></p>
+</div>
+</main>
+
+
+<footer>
+© <span id="ano"></span> — Feito com todo o meu amor para você, Agatha 💕
+</footer>
+</div>
+
+
+<script>
+document.getElementById('magicBtn').addEventListener('click', function(){
+document.getElementById('greet').textContent = "Agatha, você é o melhor capítulo da minha vida. Te amo para sempre!";
+});
+document.getElementById('ano').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
